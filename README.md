@@ -113,8 +113,8 @@ pipeline {
             steps{
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker'){   
-                    sh "docker tag netflix gauris17/netflix:latest "
-                    sh "docker push gauris17/netflix:latest"
+                    sh "docker tag netflix sen907/netflix:latest "
+                    sh "docker push sen907/netflix:latest"
                     }
                 }
             }
